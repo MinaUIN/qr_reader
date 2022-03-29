@@ -5,6 +5,7 @@ import 'package:qr_reader/pages/mapas_page.dart';
 import 'package:qr_reader/providers/ui_provider.dart';
 import 'package:qr_reader/widgets/custom_navigatorbar.dart';
 import 'package:qr_reader/widgets/scan_button.dart';
+import 'package:qr_reader/providers/db_provider.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -34,6 +35,8 @@ class _HomePageBody extends StatelessWidget {
     //Cambiar para Moatrar la Pagina Respectiva
     final currentIndex = uiProvider.selectedMenuOpt;
 
+    // TODO: Temporal leer la bd
+    DBProvider.db.database;
     switch (currentIndex) {
       case 0:
         return MapasPage();
