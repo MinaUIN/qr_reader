@@ -35,11 +35,6 @@ class _HomePageBody extends StatelessWidget {
     //Cambiar para Moatrar la Pagina Respectiva
     final currentIndex = uiProvider.selectedMenuOpt;
 
-    // TODO: Temporal leer la bd
-
-    //  final tempScan = new ScanModel(valor: 'http://google.com');
-    DBProvider.db.deleteAllScans().then(print);
-
     switch (currentIndex) {
       case 0:
         return MapasPage();
