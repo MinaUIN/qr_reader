@@ -36,7 +36,10 @@ class _HomePageBody extends StatelessWidget {
     final currentIndex = uiProvider.selectedMenuOpt;
 
     // TODO: Temporal leer la bd
-    DBProvider.db.database;
+
+    //  final tempScan = new ScanModel(valor: 'http://google.com');
+    DBProvider.db.deleteAllScans().then(print);
+
     switch (currentIndex) {
       case 0:
         return MapasPage();
