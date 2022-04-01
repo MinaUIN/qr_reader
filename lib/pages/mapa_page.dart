@@ -40,7 +40,8 @@ class _MapaPageState extends State<MapaPage> {
         ],
       ),
       body: GoogleMap(
-        myLocationButtonEnabled: false,
+        //  Quitar boton de zoom
+        zoomControlsEnabled: false,
         mapType: mapType,
         markers: markers,
         initialCameraPosition: puntoInicial,
